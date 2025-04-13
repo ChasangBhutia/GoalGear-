@@ -8,7 +8,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 const Navbar = () => {
     return (
         <nav className='navbar p-2 pt-3 ps-5 px-5'>
-            <h1 className='navbar-brand text-light'>Soccer Sphere</h1>
+            <h1 className='navbar-brand text-light'>GoalGear</h1>
             <ul className='navList d-flex gap-4  align-items-center'>
                 <li>
                 <Link style={{ color: "white", textDecoration: 'none' }} to='/'>Home</Link>

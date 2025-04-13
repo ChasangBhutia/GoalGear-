@@ -15,6 +15,7 @@ const Category = () => {
        {type==='guards' && <Section category='guards'/>}
        {type==='jersey' && <Section category='jersey'/>}
        {type==='bags' && <Section category='bags'/>}
+       {type==='socks' && <Section category='socks'/>}
     </div>
   )
 }
