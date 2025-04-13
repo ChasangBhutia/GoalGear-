@@ -20,70 +20,87 @@ import AdidasXMessi from "./AdidasXMessi.jpg"
 
 const Boots = [
     {
+        id:1,
         imgUrl:Adidasbluepredator,
         name:"Adidas blue predator",
         price:100,
     },{
+        id:2,
         imgUrl:AdidasPerformancePREDATORELITEARTIFICIALGRASS,
         name:"Adidas Performance PREDATOR ELITE ARTIFICIAL GRASS",
         price:100,
     },{
+        id:3,
         imgUrl:AdidasPredatorEliteTongueFG,
         name:"Adidas Predator Elite Tongue FG",
         price:100,
     },{
+        id:4,
         imgUrl:NikeAirZoomMercurialSuperflyIXAcademyFGMG,
         name:"Nike Air Zoom Mercurial Superfly IX Academy FG MG",
         price:100,
     },{
+        id:5,
         imgUrl:FirstLookadidasPredator20Mutator,
         name:"First Look Adidas Predator 20 Mutator",
         price:100,
     },{
+        id:6,
         imgUrl:NikeMercurialAirZoom,
         name:"Nike Mercurial Air Zoom",
         price:100,
     },{
+        id:7,
         imgUrl:AdidasLeatherShoesMen,
         name:"Adidas Leather Shoes Men",
         price:100,
     },{
+        id:8,
         imgUrl:AdidasF50,
         name:"Adidas F50",
         price:100,
     },{
+        id:9,
         imgUrl:NikeAirZoomMercurialSuperflyXProFG,
         name:"Nike Air Zoom Mercurial Superfly X ProFG",
         price:100,
     },{
+        id:10,
         imgUrl:NikeAirZoomMercurialSuperfly,
         name:"Nike Air Zoom Mercurial Superfly",
         price:100,
     },{
+        id:11,
         imgUrl:NikeGripknitPhantomGXElite,
         name:"Nike Grip knit Phantom GX Elite",
         price:100,
     },{
+        id:12,
         imgUrl:NikeKidsAirZoomMercurialSuperflyIXProFG,
         name:"Nike Kids Air Zoom Mercurial Superfly IX Pro FG",
         price:100
     },{
+        id:13,
         imgUrl:NikePhantomGXEliteFGfootballboots2024,
         name:"Nike Phantom GX Elite FG football boots 2024",
         price:100,
     },{
+        id:14,
         imgUrl:NikePhantomGXElite,
         name:"Nike Phantom GX Elite",
         price:100,
     },{
+        id:15,
         imgUrl:NikeSuperfly9whiteandred,
         name:"Nike Superfly 9 white and red",
         price:100,
     },{
+        id:16,
         imgUrl:WHyperdiamond4EliteMetalCleats,
         name:"W Hyper diamond 4 Elite Metal Cleats",
         price:100,
     },{
+        id:17,
         imgUrl:AdidasXMessi,
         name:"Adidas X Messi",
         price:100

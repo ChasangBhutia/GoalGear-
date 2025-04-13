@@ -4,8 +4,9 @@ import slide3Img from '../../assets/HeroImg/Adidas Predator Golve.png'
 
 const HeroData = [
     {
+        id:23,
         imgUrl: slide1Img,
-        name : "Nike Mashup World Cup Jersey",
+        name : "Nike World Cup Mashup Jersey",
         des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat obcaecati dolorem suscipit asperiores similique deleniti labore culpa nulla aperiam. Voluptates.",
         price: 1200,
         rating: "⭐⭐⭐⭐⭐",
@@ -14,6 +15,7 @@ const HeroData = [
         btnDesign : "btn-warning",
         headingDesign: "text-warning"
     }, {
+        id:15,
         imgUrl: slide2Img,
         name : "Nike Superfly 9 White and Red",
         des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat obcaecati dolorem suscipit asperiores similique deleniti labore culpa nulla aperiam. Voluptates.",
@@ -24,6 +26,7 @@ const HeroData = [
         btnDesign : "btn-danger",
         headingDesign: "text-danger"
     }, {
+        id:31,
         imgUrl: slide3Img,
         name : "Adidas Predator GL Pro Goalkeeper Gloves",
         des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat obcaecati dolorem suscipit asperiores similique deleniti labore culpa nulla aperiam. Voluptates.",

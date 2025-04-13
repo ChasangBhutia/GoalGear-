@@ -10,3 +10,6 @@
 .newlyAdded h1{
     z-index: 99;
 }
+.newlyAddedContainer{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

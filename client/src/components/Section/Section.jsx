@@ -25,11 +25,11 @@ const Section = (props) => {
   return (
     
     <div className='section text-center pt-5'>
-        <h1>{props.category}</h1>
-        <section className="itemContainer d-flex flex-wrap gap-5 p-5">
+        <h1 className='text-uppercase'>{props.category}</h1>
+        <section className="itemContainer d-grid gap-5 p-5">
             {data.map((item,index)=>{
                 return(
-                    <ItemCard key={index} imgUrl={item.imgUrl} name={item.name}/>
+                    <ItemCard key={index} imgUrl={item.imgUrl} name={item.name} price={item.price} itemId={item.id}/>
                 )
             })}
         </section>

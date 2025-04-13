@@ -15,54 +15,67 @@ import SpecialEditionGermany2023 from "./SpecialEditionGermany2023.jpg"
 
 const Jersey = [
     {
+        id:18,
         imgUrl:ElpremiosGermanysoccerjersey,
         name:"El premios Germany soccer jersey",
         price:100,
     },{
+        id:19,
         imgUrl:VintageJerseyNikeBarcelona1999,
         name:"Vintage Jersey Nike Barcelona 1999",
         price:100,
     },{
+        id:20,
         imgUrl:AdidasBayernMünchen,
         name:"Adidas Bayern München Jersey",
         price:100,
     },{
+        id:21,
         imgUrl:Adidas202425GermanyHomeJersey,
         name:"Adidas 2024-25 Germany Home Jersey",
         price:100,
     },{
+        id:22,
         imgUrl:AlAhlySCXAdidasConceptKit,
         name:"Al Ahly SCX Adidas Concept Kit",
         price:100,
     },{
+        id:23,
         imgUrl:NikeWorldCupMashupJersey,
         name:"Nike World Cup Mashup Jersey",
         price:100,
     },{
+        id:24,
         imgUrl:FranceAwayJersey2024,
         name:"France Away Jersey 2024-25",
         price:100,
     },{
+        id:25,
         imgUrl:PUMAACMilanJersey,
         name:"PUMA AC Milan Jersey",
         price:100,
     },{
+        id:26,
         imgUrl:PUMASpecialEdition9320PrematchShirtAndUltra14,
         name:"PUMA Special Edition 9320 Pre match Shirt & Ultra 14",
         price:100,
     },{
+        id:27,
         imgUrl:PumaManchesterCityHomeJersey2024,
         name:"Puma Manchester City Home Jersey 2024",
         price:100,
     },{
+        id:28,
         imgUrl:Y3andtheJapanFootballAssociationCollaborativeCollection,
         name:"Y3 & the Japan Football Association Collaborative Collection",
         price:100,
     },{
+        id:29,
         imgUrl:RetroLongSleeveManchesterUnited,
         name:"Retro Long Sleeve Manchester United",
         price:100,
     },{
+        id:30,
         imgUrl:SpecialEditionGermany2023,
         name:"Special Edition Germany 2023",
         price:100,
