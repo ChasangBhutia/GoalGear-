@@ -5,3 +5,13 @@
     z-index: 99;
 }
 
+.cartQuantity{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    font-weight: 500;
+    border-radius: 100%;
+    right: 5px;
+    top: 9px;
+    cursor: pointer;
+}

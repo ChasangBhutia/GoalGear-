@@ -10,12 +10,8 @@ const Category = () => {
   return (
     <div>
         <Navbar/>
-       {type==='boots' && <Section category='boots'/>}
-       {type==='gloves' && <Section category='gloves'/>}
-       {type==='guards' && <Section category='guards'/>}
-       {type==='jersey' && <Section category='jersey'/>}
-       {type==='bags' && <Section category='bags'/>}
-       {type==='socks' && <Section category='socks'/>}
+       <Section category={type}/>
+
     </div>
   )
 }

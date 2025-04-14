@@ -1,4 +1,9 @@
-.itemCard{
+.itemCard {
     width: 300px;
-    height: fit-content;
+    height: 500px;
+}
+
+.itemCard img {
+    height: 350px;
+    width:100%;
 }
