@@ -20,11 +20,16 @@ const Product = () => {
         (p) => slugify(p.name) === name
     );
     function handleClick() {
-        addToCart(product, selectedSize, itemQuantity);
-        setAddedToCart(true)
-        setTimeout(() => {
-            setAddedToCart(false);
-        }, 2000)
+        if(itemQuantity<1 || selectedSize===""){
+            alert("You must select the size and the quantity must be greater or equal to 1");
+        }else{
+            addToCart(product, selectedSize, itemQuantity);
+            setAddedToCart(true)
+            setTimeout(() => {
+                setAddedToCart(false);
+            }, 2000)
+        }
+        
     }
     function decreaseQuantity() {
         setItemQuantity(itemQuantity - 1);
