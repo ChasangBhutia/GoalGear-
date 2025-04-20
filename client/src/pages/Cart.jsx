@@ -6,8 +6,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 const Cart = () => {
 
   const { deleteItem, cartItems } = useCart();
-  console.log(cartItems);
-
 
   return (
     <div className='text-center'>
@@ -17,20 +15,20 @@ const Cart = () => {
       <table className="container">
         <tbody>
         <tr className="cartContainerHeading">
-          <td><h3>S.No</h3></td>
-          <td><h3>Product</h3></td>
-          <td><h3>Name</h3></td>
-          <td><h3>Price</h3></td>
-          <td><h3>Quantity</h3></td>
-          <td><h3>Size</h3></td>
-          <td><h3>Remove</h3></td> 
+          <td><h5>S.No</h5></td>
+          <td><h5>Product</h5></td>
+          <td><h5>Name</h5></td>
+          <td><h5>Price</h5></td>
+          <td><h5>Quantity</h5></td>
+          <td><h5>Size</h5></td>
+          <td><h5>Remove</h5></td> 
           
         </tr>
         {cartItems.map((item,index)=>{
           return(
-            <tr key={index} className='cartDetailsContainer'>
+            <tr key={index} className='cartDetailsContainer mt-2'>
               <td><span>{index+1}</span></td>
-              <td><img src={item.product.imgUrl} alt={item.product.name} height={80} width={60}/></td>
+              <td className='p-2'><img src={item.product.imgUrl} alt={item.product.name} height={80} width={60}/></td>
               <td><p>{item.product.name}</p></td>
               <td><span>{item.product.price}</span></td>
               <td><span>{item.itemQuantity}</span></td>

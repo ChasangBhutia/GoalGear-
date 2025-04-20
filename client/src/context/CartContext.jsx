@@ -8,7 +8,15 @@ export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([])
 
     const cartQuantity = cartItems.length;
-
+    let totalItems = 0;
+   
+    cartItems.map(item=>{
+        totalItems = totalItems + item.itemQuantity;
+    })
+    console.log(totalItems);
+    
+    
+    
 
     const addToCart = (productValue, selectedSizeValue, itemQuantityValue) => {
         setCartItems((prevVal) => {
@@ -16,7 +24,7 @@ export const CartProvider = ({ children }) => {
             if (exist) {
                 return prevVal.map((item) => {
                     return item.product.id === productValue.id
-                        ? { ...item, itemQuantity: item.itemQuantity + 1 }
+                        ? { ...item, itemQuantity: item.itemQuantity + itemQuantityValue }
                         : item
                 });
             } else {

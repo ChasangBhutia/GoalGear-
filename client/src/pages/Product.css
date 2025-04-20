@@ -1,3 +1,8 @@
+.sizes button{
+    height: 60px;
+    width: 60px;
+}
+
 .quantity button{
     border: none;
     background: transparent;

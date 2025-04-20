@@ -6,12 +6,11 @@ import Navbar from '../components/Navbar/Navbar';
 const Category = () => {
 
     const {type} = useParams();
-    
+  
   return (
     <div>
         <Navbar/>
        <Section category={type}/>
-
     </div>
   )
 }

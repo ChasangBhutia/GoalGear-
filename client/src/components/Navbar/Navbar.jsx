@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom';
 import "./Navbar.css"
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
@@ -8,33 +8,52 @@ import { useCart } from '../../context/CartContext';
 
 const Navbar = () => {
 
+
     const { cartQuantity } = useCart();
+    const [activeNav, setActiveNav] = useState('/');
+    const location = useLocation();
+
+    const handleNavClick = (path) => {
+        setActiveNav(path);
+    };
+    
+    const navItems = [
+        { label: 'Home', path: '/' },
+        { label: 'Boots', path: '/category/boots' },
+        { label: 'Jersey', path: '/category/jersey' },
+        { label: 'Gloves', path: '/category/gloves' },
+        { label: 'Guards', path: '/category/guards' },
+        { label: 'Bags', path: '/category/bags' },
+        { label: 'Socks', path: '/category/socks' },
+    ];
+
+
 
     return (
         <nav className='navbar p-2 pt-3 ps-5 px-5'>
             <h1 className='navbar-brand text-light'>GoalGear</h1>
-            <ul className='navList d-flex gap-4  align-items-center'>
-                <li>
-                    <Link style={{ color: "white", textDecoration: 'none' }} to='/'>Home</Link>
-                </li>
-                <li>
-                    <Link style={{ color: "white", textDecoration: 'none' }} to='/category/boots'>Boots</Link>
-                </li>
-                <li>
-                    <Link style={{ color: "white", textDecoration: 'none' }} to='/category/jersey'>Jersey</Link>
-                </li>
-                <li>
-                    <Link style={{ color: "white", textDecoration: 'none' }} to='/category/gloves'>Gloves</Link>
-                </li>
-                <li>
-                    <Link style={{ color: "white", textDecoration: 'none' }} to='/category/guards'>Guards</Link>
-                </li>
-                <li>
-                    <Link style={{ color: "white", textDecoration: 'none' }} to='/category/bags'>Bags</Link>
-                </li>
-                <li>
-                    <Link style={{ color: "white", textDecoration: 'none' }} to='/category/socks'>Socks</Link>
-                </li>
+            <ul className='navList d-flex gap-4 align-items-center'>
+                {navItems.map(({ label, path }) => (
+                    <li
+                        key={path}
+                        onClick={() => handleNavClick(path)}
+                        style={{
+                            borderBottom: activeNav === path ? '2px solid yellow' : 'none',
+                            paddingBottom: '5px',
+                            cursor: 'pointer',
+                        }}
+                    >
+                        <Link
+                            style={{
+                                    textDecoration: 'none',
+                                    color: activeNav === path ? 'yellow' : 'white',
+                                  }}
+                            to={path}
+                        >
+                            {label}
+                        </Link>
+                    </li>
+                ))}
             </ul>
             <ul className='d-flex gap-3 style-type-none align-items-center'>
                 <li>

@@ -15,7 +15,6 @@ const ItemCard = (props) => {
                 <h3 className='fs-5'>{props.name}</h3>
                 <p className='price fs-5'>Price: ₹{props.price}</p>
             </Link>
-
         </section>
     )
 }
