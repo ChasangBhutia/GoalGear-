@@ -6,6 +6,9 @@ import { useCart } from '../context/CartContext';
 import "./Product.css"
 import ProductsDetail from '../components/ProductDetail/ProductsDetail';
 import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs';
+import SimilarProducts from '../components/SimilarProducts/SimilarProducts';
+import Reviews from '../components/Reviews/Reviews';
+import Footer from '../components/Footer/Footer';
 
 const Product = () => {
 
@@ -50,6 +53,13 @@ const Product = () => {
             setSelectedSize(e.target.value);
         }
     }
+    const hrStyle = {
+        width:"200px",
+        margin:"auto",
+        border:"none",
+        borderBottom:"3px solid black",
+        marginBottom:"10px"
+      }
 
 
     return (
@@ -67,7 +77,12 @@ const Product = () => {
                 increaseQuantity={increaseQuantity}
                 itemQuantity={itemQuantity}
             />
-
+            <hr style={hrStyle}/>
+            <SimilarProducts product={product}/>
+            <hr style={hrStyle}/>
+            <Reviews />
+            <hr style={hrStyle}/>
+            <Footer/>
         </div>
     )
 }

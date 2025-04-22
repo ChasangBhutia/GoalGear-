@@ -34,7 +34,7 @@ const Hero = () => {
                     {
                         HeroData.map((item, index) => {
                             return (
-                                <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval="2800">
+                                <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`} data-bs-interval="2000">
                                     <section className="carouselContainer p-5 d-flex justify-content-around">
                                         <aside className="leftContainer pt-3 d-flex flex-column gap-2" style={{ flex: 1 }}>
                                             <h1 className={item.headingDesign}>{item.name}</h1>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductsDetail = (props) => {
   return (
-    <div className='d-flex container mt-1 gap-5'>
+    <div className='d-flex container mt-1 mb-5 gap-5'>
                     <div className="imgSection d-flex gap-3">
                         <section className='subImg d-flex flex-column gap-3 justify-content-center'>
                             <img loading='lazy' src={props.product.imgUrl} alt="" height={100} width={70} />
